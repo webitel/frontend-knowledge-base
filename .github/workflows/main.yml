@@ -1,0 +1,39 @@
+name: build docs and publish to github pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+
+      - name: install + build
+      - run: bun i
+      - run: bun run docs:build
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: docs
+          path: ./.vitepress/dist
+
+  deploy:
+    needs: [build]
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup Github Pages
+        id: setup_pages
+        uses: actions/configure-pages@v4
+
+      - name: deploy to Github Pages
+        id: deploy_pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: docs
