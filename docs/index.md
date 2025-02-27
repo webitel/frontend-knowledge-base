@@ -4,22 +4,23 @@ layout: home
 
 hero:
   name: "Webitel Front-end Knowledge Base"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: "Tech Docs, Code Styleguide, How-to's, and more"
+  tagline: TODO
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Main
+      link: /docs/main/
+
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: FAQ
+      link: /docs/faq/
 
 features:
-  - title: Feature A
+  - title: Відгук Д.
+    details: '"Нарешті це сталося! Не уявляю, як було без цього раніше.."'
+  - title: Відгук %Хто?%
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Відгук %Хто?%
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

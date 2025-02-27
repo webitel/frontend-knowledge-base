@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { routes } from "./routes/routes";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -20,18 +21,9 @@ export default defineConfig({
     search: { provider: 'local' },
     nav: [
       { text: 'Home', link: '/docs' },
-      { text: 'Examples', link: '/docs/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/docs/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/docs/api-examples' }
-        ]
-      }
-    ],
+    sidebar: routes,
 
     socialLinks: [
       {
