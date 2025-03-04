@@ -5,7 +5,8 @@ export const routes = [
         text: 'How To\'s',
         collapsed: false,
         items: [
-            {text: 'Write docs', link: '/docs/how-to/write-docs.md'},
+            {text: 'Write docs', link: '/docs/how-to/write-docs/write-docs.md'},
+            {text: 'Manage hotfix branches', link: '/docs/how-to/hotfix-release/hotfix-release.md'},
         ],
     },
     {
