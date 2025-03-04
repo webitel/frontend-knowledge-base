@@ -8,7 +8,8 @@
 4. PR to `main`, merge, ready to testing on test environment
 5. checkout to target release branch
 6. `cherry-pick` the hotfix commit
-7. if cherry-picked commit conflicts and should be merged – resolve conflicts and merge (or make a new PR)
+7. if cherry-picked commit conflicts and should be merged – resolve conflicts and merge
+(if branch has no direct push restrictions. or make a new PR)
 8. ready to test on production environment
 
 ## Хотфікс, але в лібі
