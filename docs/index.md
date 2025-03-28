@@ -9,11 +9,11 @@ hero:
   actions:
     - theme: brand
       text: Main
-      link: /docs/main/
+      link: /main/
 
     - theme: alt
       text: FAQ
-      link: /docs/faq/
+      link: /faq/
 
 features:
   - title: Відгук Д.

@@ -21,7 +21,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     search: { provider: 'local' },
     nav: [
-      { text: 'Home', link: '/docs' },
+      // { text: 'Home', link: '/docs' },
     ],
 
     sidebar: routes,
