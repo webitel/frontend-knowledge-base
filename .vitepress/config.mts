@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Webitel Front-end Knowledge Base",
   description: "Tech Docs, Code Styleguide, How-to's, and more",
   base: '/frontend-knowledge-base/',
+  srcDir: 'docs',
   head: [
     [
       'link',

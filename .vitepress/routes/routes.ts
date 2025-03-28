@@ -20,6 +20,7 @@ export const routes = [
         text: 'Code Styleguide',
         collapsed: false,
         items: [
+            { text: 'Code Linting and Reformatting', link: '/docs/styleguide/linting-and-reformatting/index.md' },
             { text: 'Inspiration Sources', link: '/docs/styleguide/inspiration-sources.md' },
             { text: 'CSS', link: '/docs/styleguide/css/index.md' },
         ],
