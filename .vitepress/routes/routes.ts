@@ -2,6 +2,19 @@ export const routes = [
     {text: 'FAQ', link: '/faq/index.md'},
     {text: 'Main', link: '/main/index.md'},
     {
+        text: 'Design Considerations',
+        collapsed: false,
+        items: [
+            {
+                text: ' Namings',
+                collapsed: false,
+                items: [
+                    {text: 'WtTypes', link: '/design-considerations/namings/wt-types/index.md'},
+                ],
+            },
+        ],
+    },
+    {
         text: 'How To\'s',
         collapsed: false,
         items: [
